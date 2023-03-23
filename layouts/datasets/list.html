@@ -4,7 +4,6 @@
 {{range .Pages}}
 <tr>
   <td><a href="{{ .RelPermalink }}"><img src="{{ .Site.BaseURL }}{{ .Params.other.image}}"></a></td>
-  <p {{ index .Params.other.exampleImage 1 }}></p>
     <td>
       <a href="{{ .RelPermalink }}" >{{ .Params.datacite.name }}</a><br/>
       <span class="keywords">Keywords: {{ .Params.datacite.keywords }}.</span><br/>
