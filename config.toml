@@ -1,11 +1,9 @@
-baseurl = "https://nbisweden.github.io"
+baseurl = "https://nbisweden.github.io/hugo.bp.datasets.nbis.se"
 title = "Bigpicture datasets"
 languageCode = "en-us"
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 
-[outputs]
-home = ["HTML", "RSS"]
 
 [params]
   header_image = "img/bigpicture-banner.jpg"
@@ -19,7 +17,4 @@ home = ["HTML", "RSS"]
   sidebar_avatar = "img/bigpicture_logo.svg"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
-  [[params.addtional_menus]]
-  title =  "Datasets"
-  href =  "/hugo.bp.datasets.nbis.se/datasets/"
-  
+[[params.addtional_menus]]
