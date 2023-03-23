@@ -21,5 +21,5 @@ home = ["HTML", "RSS"]
 
   [[params.addtional_menus]]
   title =  "Datasets"
-  href =  "/datasets/"
+  href =  "/hugo.bp.datasets.nbis.se/datasets/"
   
