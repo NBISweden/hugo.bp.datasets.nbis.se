@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class = "datasets-container">
+<table>    
+{{range .Pages}}
+<tr>
+  <td><a href="{{ .RelPermalink }}"><img src="{{ .Params.other.image}}"></a></td>
+  <p {{ index .Params.other.exampleImage 1 }}></p>
+    <td>
+      <a href="{{ .RelPermalink }}" >{{ .Params.datacite.name }}</a><br/>
+      <span class="keywords">Keywords: {{ .Params.datacite.keywords }}.</span><br/>
+    </td>
+    <td>{{ .Params.others.datePublished }}</td>
+  </tr>
+{{end}}
+</table>
+</div>
+
+
+
+{{ .Content }}
+
+{{ end }}
