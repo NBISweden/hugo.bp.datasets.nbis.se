@@ -3,12 +3,33 @@ hidden: no
 datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
-  "@id": 
-  name: "Mock data from YAML 1"
+  "@id": "https://doi.org/10.123/l2h-l5649"
+  name: "Mock data 15"
+  about: "Pathology"
+  url: "https:/.Mock"
+  author:
+  - name: "Person 1"
+    #"@id": # FIXME: missing info
+    "@type": "Person"
+  - name: "Person 2"
+    "@id": "https://orcid.org/0"
+    "@type": "Person"
+  - name: "Person 3"
+    "@id": "https://orcid.org/0"
+    "@type": "Person"
+  - name: "Person 4"
+    "@id": "https://orcid.org/0"
+    "@type": "Person"
+  - name: "Person 4"
+    "@id": "https://orcid.org/0"
+    "@type": "Person"
+  - name: "Person 5"
+    "@id": "https://orcid.org/0"
+    "@type": "Person"
   publisher:
     "@type": "Organization"
     name: "BP"
-  copyrightYear: 
+  copyrightYear: 2019
   copyrightHolder:
   - name: "University 1"
     url: "https://uni1.se/"
@@ -31,13 +52,13 @@ datacite:
     "@type": "Person"
   - name: "BP"
     email: "BP@mock.com"
-    "@id": "https://"
+    "@id": "https://datahub.bp.mock.se"
     "@type": "Organization"
-  dateCreated: "2020-11-19"
-  datePublished: "2020-11-19"
-  dateModified: "2020-11-21"
+  dateCreated: "2019-11-19"
+  datePublished: "2019-11-19"
+  dateModified: "2019-11-21"
   keywords: "Pathology, Whole slide imaging, Breast, Lymph nodes, Cancer, Sentinel nodes, Immunohistochemical staining, cytokeratin, CKAE1/AE3"
-  version:
+  version: "1.0.2"
   # v1.0.2 2020-07-05: Update size in bytes.
   description: |
     Whole slide imaging of 396 full cases of axillary lymph nodes in breast
@@ -48,54 +69,15 @@ datacite:
     "@type": "CreativeWork"
     abstract: |
       Free for use in legal and ethical medical diagnostics research.
-  - name: "Big picture license"
-    id: "https://"
+  - name: "Bigpicture license"
+    id: "https://d"
   citation:
     #- "@type": "CreativeWork"
     #  "@id": "https://doi.org/..."
     #  name: "Title of paper goes here"
 other:
-  age_at_extraction:
-  - '45'
-  - '90'
-  anatomical_site:
-  - Skin structure of cheek (body structure)
-  - Skin structure of upper arm
-  - Skin structure of lower leg (body structure)
-  - Skin structure of back (body structure)
-  - Skin structure of hand (body structure)
-  - Skin appendage structure
-  - Skin of knee
-  animal_species:
-  - Homo sapiens
-  block_preparation: []
-  bp_image_type:
-  - Brightfield
-  extraction_method:
-  - Biopsy
-  - Scraping
-  - Excision
-  image_resolution:
-  - 0.00022984807042544878
-  - 0.00046104195481788847
-  indirect_access_only: 'False'
-  specimen_type:
-  - Histopathology
-  staining_name:
-  - "KIR\xD6D" 
-  - KI67
-  - P16
-  - hematoxylin stain,water soluble eosin stain
-  - "SOXR\xD6D"
-  - CK18
-  - MELAN
-  - HSV1
-  - HSV2
-  - CKAE
-  - SOX10
-  - HMB,
-  shortName: "MD1"
-  status:
+  shortName: "MD15"
+  status: "Ongoing"
   annotation: |
     No in-image annotations available. Additional information at case level
     available on request.
@@ -104,44 +86,50 @@ other:
   - "NO"
   - "SE"
   organ:
+  - name: "Breast"
+    sctid: 38498374 # SNOMED-CT https://termbrowser.nhs.uk/?perspective=full&conceptId1=%s
   age-span: "-"
-  bytes:
-  numberOfScans:
-  numberOfAnnotations:
+  bytes: 2363159897649  # 2.4 TB
+  numberOfScans: 4462
+  numberOfAnnotations: 0
+  resolution: "20x"
   modality:
+  - "SM"
   scanner:
   - Aperio ScanScope AT
   - Hamamatsu NanoZoomer XR
   - Hamamatsu NanoZoomer S360
   - Hamamatsu NanoZoomer S60
-  image: "/img/m_p_b/ckae-metastasis-thumbnail.jpeg"
+  stain: "Hematoxylin and eosin. In sentinel node cases also immunohistochemical stain  for cytokeratin AE1/AE3."
+  image: "img/m_p_b/he-overview-thumbnail.jpeg"
   exampleImage:
-  
   - title: "Overview of whole slide imaging with hematoxylin and eosin staining."
-    url: "/img/m_p_b/he-overview.jpeg"
-    thumbnail-url: "/img/m_p_b/he-overview-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m_p_b/he-overview.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/he-overview-thumbnail.jpeg"
   - title: "Overview of whole slide imaging with cytokeratin immunostaining."
-    url: "/img/m_p_b/ckae-overview.jpeg"
-    thumbnail-url: "/img/m_p_b/ckae-overview-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m_p_b/ckae-overview.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/ckae-overview-thumbnail.jpeg"
   - title: "Detail view of metastasis with hematoxylin and eosin staining."
-    url: "/img/m_p_b/he-metastasis.jpeg"
-    thumbnail-url: "/img/m_p_b/he-metastasis-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m_p_b/he-metastasis.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/he-metastasis-thumbnail.jpeg"
   - title: "Detail view of metastasis with cytokeratin immunostaining."
-    url: "/img/m_p_b/ckae-metastasis.jpeg"
-    thumbnail-url: "/img/m_p_b/ckae-metastasis-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis-thumbnail.jpeg"
+access: Indirect
 ---
 ## File formats
-{{< param datacite.name >}}
-
-{{ end }}
-
-{{ .Param "datacite" }}
 ### Pixel position scaling
 Coordinates given are relative to the image *width*. To get the correct pixel
 position, X coordinates (and Y coordinates!) should therefore be multiplied with
 the image *width*.
 
 ## License
+
+
+
+
+
+
 Copyright
 {{ page.datacite.copyrightYear }}
 {{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}
