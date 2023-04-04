@@ -108,16 +108,16 @@ other:
     thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/carcinoma-thumbnail.jpeg"
   - title: "Overview of annotations."
     url: "/assets/images/mock_datasets/bp/m_p_c/annotations.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/annotations-thumbnail.jpeg"
+    thumbnailurl: "/assets/images/mock_datasets/bp/m_p_c/annotations-thumbnail.jpeg"
   - title: "Overview of carcinoma whole slide imaging."
     url: "/assets/images/mock_datasets/bp/m_p_c/carcinoma.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/carcinoma-thumbnail.jpeg"
+    thumbnailurl: "/assets/images/mock_datasets/bp/m_p_c/carcinoma-thumbnail.jpeg"
   - title: "Overview of carcinoma annotations."
     url: "/assets/images/mock_datasets/bp/m_p_c/carcinoma-annotations.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/carcinoma-annotations-thumbnail.jpeg"
+    thumbnailurl: "/assets/images/mock_datasets/bp/m_p_c/carcinoma-annotations-thumbnail.jpeg"
   - title: "To-scale view of pixel resolution in original whole slide imaging data."
     url: "/assets/images/mock_datasets/bp/m_p_c/to-scale.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/to-scale-thumbnail.jpeg"
+    thumbnailurl: "/assets/images/mock_datasets/bp/m_p_c/to-scale-thumbnail.jpeg"
 access: Direct
 ---
 

@@ -1,7 +1,14 @@
 {{ define "main" }}
 <div class = "info-box">
        <p>{{.Params.datacite.name}}</p>
-        
+       <h2>Sample images</h2>
+       <p>Sample images with reduced image quality. Please click to preview.</p>
+ 
+       <div>
+        <ul class="dataset-example-images" id="dataset-example-images" >
+       <li><img src="{{.Site.BaseURL}}{{ .Params.other.image}}"></li>
+        </ul>
+       </div>
      <h2 class="dataset-information">Dataset information</h2>
      <table>
         <tr>
@@ -171,6 +178,10 @@
         </table> 
       </div>    
         {{.Content}}
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.3.2/viewer.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.3.2/viewer.min.js"></script>
+        <script>
+          const gallery = new Viewer(document.getElementById('dataset-example-images'), { url: "data-original" });
+        </script>
 
     {{ end }}
